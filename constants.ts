@@ -38,12 +38,12 @@ export const PROJECTS: Project[] = [
   },
   {
     id: '4',
-    title: 'Project Still not decided',
-    description: 'DO IT ALREADY MAHAM.',
-    longDescription: 'ABCD',
-    image: '/images/pulse-health.jpg',
-    tags: ['A', 'B', 'C', 'D'],
-    liveUrl: 'https://pulse-api.io',
+    title: 'Cactus Coffee',
+    description: 'A clean and modern experience for the cafe of the future.',
+    longDescription: 'Cactus Coffee is a modern cafe experience designed with a focus on sustainability and customer satisfaction. Built with React and Tailwind CSS, it offers a seamless user experience with a clean, minimalist design.',
+    image: '/images/cactus-coffee.png',
+    tags: ['React', 'Tailwind CSS'],
+    liveUrl: 'https://cactus-coffee-prototype.vercel.app/',
   },
   {
     id: '5',
