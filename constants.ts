@@ -45,15 +45,7 @@ export const PROJECTS: Project[] = [
     tags: ['React', 'Tailwind CSS'],
     liveUrl: 'https://cactus-coffee-prototype.vercel.app/',
   },
-  {
-    id: '5',
-    title: 'FINALLY ONE LAST ONE',
-    description: 'hope it is something good',
-    longDescription: 'abdbd.',
-    image: '/images/aura-social.jpg',
-    tags: ['d', 'r', 'w', 'f'],
-    liveUrl: 'https://aura-social.network',
-  }
+ 
 ];
 
 
