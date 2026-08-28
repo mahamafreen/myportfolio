@@ -85,7 +85,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-textSecondary font-light leading-relaxed max-w-lg mb-12"
           >
-            Turning ideas into interactive web experiences that work beautifully and intuitively.
+            HI, I'm Maham Afreen, a Software Engineering student and the Founder of XEMS.SPACE. I design and build digital products that combine thoughtful user experiences with modern technology.
           </motion.p>
 
           <motion.div

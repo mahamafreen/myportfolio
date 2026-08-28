@@ -73,7 +73,9 @@ const Projects: React.FC = () => {
             <h2 className="text-4xl font-serif font-bold text-textPrimary">Featured Creations</h2>
           </div>
           <p className="max-w-md text-textSecondary text-sm text-right mt-4 md:mt-0">
-            A selection of my personal favorites.
+           
+A selection of digital products, AI-powered applications, and web experiences 
+I’ve designed and built.
           </p>
         </div>
 
