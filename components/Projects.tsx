@@ -17,10 +17,12 @@ const ProjectModal: React.FC<{ project: Project; onClose: () => void }> = ({ pro
         initial={{ scale: 0.9, y: 20 }}
         animate={{ scale: 1, y: 0 }}
         exit={{ scale: 0.9, y: 20 }}
-        className="glass-card max-w-4xl w-full max-height-[90vh] rounded-3xl overflow-hidden shadow-2xl relative"
+        className="glass-card max-w-4xl w-full max-h-[90vh] rounded-3xl overflow-hidden shadow-2xl relative"
       >
         <button
+          type="button"
           onClick={onClose}
+          aria-label="Close project details"
           className="absolute top-6 right-6 text-textSecondary hover:text-white z-10 bg-surface/50 p-2 rounded-full"
         >
           <X size={24} />
@@ -84,7 +86,16 @@ const Projects: React.FC = () => {
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
               onClick={() => setSelectedProject(project)}
-              className="group cursor-pointer relative rounded-3xl overflow-hidden glass-card aspect-[4/5]"
+              onKeyDown={(event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault();
+                  setSelectedProject(project);
+                }
+              }}
+              role="button"
+              tabIndex={0}
+              aria-label={`View ${project.title} project details`}
+              className="group cursor-pointer relative rounded-3xl overflow-hidden glass-card aspect-[4/5] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
               <div className="absolute inset-0 z-0">
                 <img
